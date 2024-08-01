@@ -1,0 +1,265 @@
+  *{
+      scroll-behavior: smooth;
+  }
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      overflow: hidden;
+
+    }
+    
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #0f0f0f;
+      height: 47px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .bars {
+      height: 30px;
+      cursor: pointer;
+      border: 1px  whitesmoke;
+      border-radius: 50%;
+    }
+
+    .bars:hover{
+      background-color: #ccc;
+      color: #0f0f0f;
+    }
+    
+    .youtube {
+      height: 50px;
+    }
+    
+    .bars, .youtube {
+      margin-right: 15px;
+      color: white;
+    }
+    
+    .search {
+      display: flex;
+      align-items: center;
+      margin-left: 13%;
+    }
+    
+    .search-input {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      width: 500px;
+      background-color: #0f0f0f;
+      color: #ccc;
+    }
+    
+    .search-button {
+      padding: 10px;
+      font-size: 16px;
+      border: whitesmoke 1px solid;
+      border-radius: 2px;
+      background-color: #0f0f0f;
+      cursor: pointer;
+      margin-left: 0px;
+      color: whitesmoke;
+    }
+    
+    .mic-container {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+    }
+    
+  .mic-container:hover{
+    background-color: #ccc;
+    color: #0f0f0f;
+  }
+
+  .mic-container:hover .mic-button{
+    color: #0f0f0f;
+  }
+    
+    .mic-button {
+      font-size: 16px;
+      color: #f0f0f0;
+      cursor: pointer;
+    }
+    
+    .right-side {
+      padding-left: 20%;
+      display: flex;
+      align-items: center;
+      color: whitesmoke;
+      gap: 10px;
+    }
+    
+    .fa-video, .fa-bell, .fa-user-circle {
+      font-size: 25px;
+      padding-left: 15px;
+      cursor: pointer;
+    }
+    
+    header hr {
+      color: whitesmoke;
+    }
+    
+    .main-content {
+      display: flex;
+    }
+    
+    .content-area {
+      width: 15%;
+      display: inline-block;
+      max-height: 85vh; /* Adjust the height as needed */
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    #upload {
+      transform: rotate(-90deg);
+      cursor: pointer;
+    }
+    
+    .home {
+      padding-left: 25px;
+    }
+    
+    .content-area li {
+      list-style-type: none;
+      margin-left: -20px;
+    }
+    
+    .content-area hr {
+      width: 200px;
+      margin-left: -30px;
+    }
+    
+    .content-area ul li {
+      margin-bottom: 3px;
+      border-bottom: 1px #ccc;
+      padding: 10px;
+      border-radius: 3%;
+    }
+    
+    #li1 li:first-child {
+      background-color: rgba(211, 211, 211, 0.2);
+    }
+    
+    #li1 li:last-child {
+      border-bottom: none;
+    }
+    
+    .content-area ul li:hover {
+      background-color: rgba(211, 211, 211, 0.2);
+      cursor: pointer;
+    }
+    
+    #p-in-subsc {
+      margin-left: 25px;
+    }
+    
+    #li2 li {
+      display: flex;
+      align-items: center;
+    }
+    
+    #li2 li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: #f0f0f0 solid 1px;
+      border-radius: 50%;
+    }
+    
+    .right-part {
+      flex-grow: 1;
+      background-color: #0f0f0f;
+      padding: 20px;
+      margin-left: 20px;
+      color: #ccc;
+      max-height: 100vh; /* Adjust the height as needed */
+    }
+    
+    /* Hovering effect for search button, mic button, and right side icons */
+    .search-button:hover {
+      background-color: #d3d3d3;
+      color: #0f0f0f;
+    }
+    
+    .right-part {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4,1fr);
+      grid-gap: 30px;
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+    
+    .card:first-child, .card:nth-child(2), .card:nth-child(3), .card:nth-child(4){
+      height: 50px;
+      margin-top: 0px;
+    }
+
+    .card {
+      height: 50px;
+      margin-bottom: 175px;
+      }
+    
+    .big-img {
+      width: 270px;
+      height: 170px;
+    }
+    
+    .small-img-for-prof {
+      width: 20px;
+      height: 20px;
+      border: 1px solid whitesmoke;
+      border-radius: 50%;
+    }
+
+    .card pre{
+      margin-top: -7px;
+    }
+
+    .text-for-thubnail {
+      font-size: 18px; /* Change the font size to 18px */
+    }
+
+
+    
+    .card:hover{
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    /* Scrollbar Track */
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+    height: 2px; /* Height of the horizontal scrollbar */
+    background-color: #0f0f0f; /* Background color of the scrollbar track */
+  }
+
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the draggable part of the scrollbar */
+    border-radius: 10px; /* Round the corners of the scrollbar thumb */
+    border: 2px solid #0f0f0f; /* Optional: add border to create some spacing */
+  }
+
+  /* Optional: Style the scrollbar corner where two scrollbars meet */
+  ::-webkit-scrollbar-corner {
+    background-color: #0f0f0f; /* Match the track color */
+  }
+
+  
